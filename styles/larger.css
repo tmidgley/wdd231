@@ -24,7 +24,7 @@
 
     /* Navigation */
     nav {
-        display: flex !important;
+        display: flex;
         justify-content: center;
         background-color: #005F73;    }
 
