@@ -2,31 +2,29 @@
 
 @media screen and (min-width: 768px) {
 
-    /* Header */
-        header {
-            grid-template-columns: 60px 1fr;
-            padding: 0.75rem 1rem;
-        }
-    
-        header img {
-            width: 60px;
-            height: 60px;
-        }
-    
-        header span {
-            font-size: 1.5rem;
-        }
+    header {
+        grid-template-columns: 60px 1fr;
+        padding: 0.75rem 1rem;
+    }
 
-    /* Hide Hamburger */
+    header img {
+        width: 60px;
+        height: 60px;
+    }
+
+    header span {
+        font-size: 1.5rem;
+    }
+
     .hamburger {
         display: none;
     }
 
-    /* Navigation */
     nav {
         display: flex;
         justify-content: center;
-        background-color: #005F73;    }
+        background-color: #005F73;
+    }
 
     nav a {
         border: none;
@@ -34,13 +32,11 @@
         max-width: 250px;
     }
 
-    /* Main Width */
     main {
         max-width: 1200px;
         margin: 0 auto;
     }
 
-    /* Intro Grid */
     .intro-grid {
         grid-template-columns: 2fr 1fr;
         align-items: stretch;
@@ -52,27 +48,22 @@
         height: 100%;
     }
 
-    /* Student Photo */
     .intro-grid img {
         max-width: 250px;
         margin: auto;
         padding: 1rem;
     }
 
-    /* Courses */
     #courseContainer {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    /* Social */
     .social img {
         width: 50px;
         height: 50px;
     }
 
-    /* Footer */
     footer {
         font-size: 1rem;
     }
-
 }

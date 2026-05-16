@@ -1,9 +1,11 @@
 /* small.css */
 
-/* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap');
 
-/* Base Page */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #F8F9FA;
@@ -11,7 +13,6 @@ body {
     margin: 0;
 }
 
-/* Headings */
 h1,
 h2,
 nav a,
@@ -41,11 +42,11 @@ header img {
 header span {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #222222;
 }
 
-/* Hamburger Button */
+/* Hamburger */
 .hamburger {
+    display: block;
     background: none;
     border: none;
     color: #222222;
@@ -77,7 +78,7 @@ nav a {
     color: white;
     border-top: 1px solid #444;
     text-align: center;
-    transition: 0.3s;
+    text-decoration: none;
 }
 
 nav a:hover {
@@ -95,22 +96,22 @@ h1 {
     color: #005F73;
 }
 
-/* Intro Grid */
+/* Intro Grid - mobile is one column */
 .intro-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
     margin-bottom: 1rem;
 }
 
-.intro-grid section {
+.intro-grid section,
+.courses {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 6px;
     overflow: hidden;
 }
 
-/* Section Headers */
 .intro-grid h2,
 .courses h2 {
     background-color: #005F73;
@@ -121,14 +122,12 @@ h1 {
     margin: 0;
 }
 
-/* About Me Text */
 .intro-grid p {
     padding: 1rem;
     font-size: 0.95rem;
     line-height: 1.6;
 }
 
-/* Student Photo */
 .intro-grid img {
     width: 100%;
     max-width: 220px;
@@ -140,24 +139,18 @@ h1 {
 
 /* Courses */
 .courses {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 0 1rem 1rem;
     text-align: center;
-    overflow: hidden;
+    padding-bottom: 1rem;
 }
 
-/* Filter Buttons */
 .courses>button {
-    margin: 0.5rem;
+    margin: 0.4rem;
     padding: 0.6rem 1.2rem;
     border: none;
     background-color: #005F73;
     color: white;
     border-radius: 6px;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 .courses>button:hover {
@@ -165,25 +158,24 @@ h1 {
     color: #222222;
 }
 
-/* Course Container */
+/* Course Container - mobile is one column */
 #courseContainer {
     display: grid;
     grid-template-columns: 1fr;
     gap: 0.75rem;
     padding: 1rem;
-    box-sizing: border-box;
+    width: 100%;
 }
 
 #courseContainer button {
     width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
     background-color: #F8F9FA;
     border: 1px solid #ccc;
     padding: 0.75rem;
     border-radius: 6px;
     color: #222222;
     font-size: 0.8rem;
+    word-break: break-word;
 }
 
 #courseContainer.empty {
@@ -191,11 +183,6 @@ h1 {
     gap: 0;
 }
 
-.courses {
-    overflow: hidden;
-}
-
-/* Credits Text */
 .courses p {
     font-size: 0.9rem;
 }
@@ -204,7 +191,7 @@ h1 {
     display: none;
 }
 
-/* Social Links */
+/* Social */
 .social {
     display: flex;
     justify-content: center;
@@ -215,7 +202,6 @@ h1 {
 .social img {
     width: 40px;
     height: 40px;
-    transition: transform 0.3s ease;
 }
 
 .social img:hover {
@@ -229,12 +215,4 @@ footer {
     text-align: center;
     padding: 1rem;
     font-size: 0.85rem;
-}
-
-@media screen and (max-width: 700px) {
-
-    .intro-grid {
-        grid-template-columns: 1fr;
-    }
-
 }
