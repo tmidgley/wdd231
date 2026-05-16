@@ -1,0 +1,74 @@
+Site Name
+Surprise Arizona Chamber of Commerce
+
+
+Site Purpose
+The Surprise Arizona Chamber of Commerce website promotes local businesses, community events, and economic growth while connecting residents, visitors, and business owners with helpful resources.
+
+
+Target Market
+Local business owners and entrepreneurs
+Residents of Surprise, Arizona
+Visitors exploring local businesses and events
+Companies interested in relocating or networking in the area
+
+
+Site Goals
+Promote local businesses and chamber members
+Increase community engagement through events and news
+Encourage business networking and membership growth
+Provide easy access to local resources and contact information
+
+
+User Personas
+1. Small Business Owner
+Name: Sarah Martinez
+Age: 38
+Goal: Find networking opportunities and promote her business locally.
+
+2. Local Resident
+Name: David Lee
+Age: 45
+Goal: Discover local events, restaurants, and community news.
+
+3. Visitor/New Resident
+Name: Emily Carter
+Age: 29
+Goal: Learn about businesses and activities available in Surprise, Arizona.
+
+
+User Scenarios
+Scenario 1
+A business owner visits the site to join the chamber and learn about upcoming networking events.
+
+Scenario 2
+A resident checks the community calendar to find local festivals and activities happening this weekend.
+
+Scenario 3
+A visitor searches for restaurants and local attractions while planning a trip to Surprise, Arizona.
+
+
+SEO Plan
+Keywords
+Surprise Arizona Chamber of Commerce
+Surprise AZ businesses
+Local businesses in Surprise Arizona
+Surprise Arizona events
+Business networking in Surprise AZ
+
+SEO Strategies
+Use keyword-rich page titles and headings
+Add local business listings and event updates regularly
+Optimize images with alt text
+Ensure mobile-friendly responsive design
+Include internal links between events, businesses, and resources pages
+
+Color Palette
+Primary Color: #005F73 (Deep Teal)
+Secondary Color: #EE9B00 (Warm Gold)
+Background Color: #F8F9FA (Light Gray/White)
+Text Color: #222222 (Dark Charcoal)
+
+Font Family
+Headings: Poppins, sans-serif
+Body Text: Open Sans, sans-serif

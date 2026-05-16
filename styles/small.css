@@ -1,0 +1,239 @@
+/* small.css */
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap');
+
+/* Base Page */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F8F9FA;
+    color: #222222;
+    margin: 0;
+}
+
+/* Headings */
+h1,
+h2,
+nav a,
+button,
+header span {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+header {
+    background-color: white;
+    color: #222222;
+    display: grid;
+    grid-template-columns: 50px 1fr 44px;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+}
+
+header span {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #222222;
+}
+
+/* Hamburger Button */
+.hamburger {
+    background: none;
+    border: none;
+    color: #222222;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "☰";
+    font-size: 2rem;
+}
+
+.hamburger.open::before {
+    content: "✖";
+}
+
+/* Navigation */
+nav {
+    display: none;
+    background-color: #005F73;
+}
+
+nav.open {
+    display: block;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    border-top: 1px solid #444;
+    text-align: center;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #EE9B00;
+    color: #222222;
+}
+
+/* Main */
+main {
+    padding: 1rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    color: #005F73;
+}
+
+/* Intro Grid */
+.intro-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.intro-grid section {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* Section Headers */
+.intro-grid h2,
+.courses h2 {
+    background-color: #005F73;
+    color: white;
+    text-align: center;
+    padding: 0.75rem;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* About Me Text */
+.intro-grid p {
+    padding: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Student Photo */
+.intro-grid img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+}
+
+/* Courses */
+.courses {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+/* Filter Buttons */
+.courses>button {
+    margin: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    background-color: #005F73;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.courses>button:hover {
+    background-color: #EE9B00;
+    color: #222222;
+}
+
+/* Course Container */
+#courseContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 1rem;
+}
+
+/* Course Buttons */
+#courseContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    padding: 1rem;
+}
+
+#courseContainer button {
+    background-color: #F8F9FA;
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    border-radius: 6px;
+    color: #222222;
+    font-size: 0.8rem;
+}
+
+#courseContainer.empty {
+    padding: 0;
+    gap: 0;
+}
+
+/* Credits Text */
+.courses p {
+    font-size: 0.9rem;
+}
+
+#creditsText {
+    display: none;
+}
+
+/* Social Links */
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.social img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #005F73;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+}
+
+@media screen and (max-width: 700px) {
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

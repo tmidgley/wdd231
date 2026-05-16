@@ -3,12 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travis Midgley | WDD231</title>
+    <meta name="description" content="This webpage showcases web development coursework, student information, and completed programming classes as part of a frontend web development certificate program.">
+    <meta name="author" content="Travis Midgley">
+
+<!--Style Sheets Here-->
     <link rel="stylesheet" href="styles/normalize.css">
-    
-    <title>WDD 231</title>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+<!--Scripts Here-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 231 Travis Midgley</h1>
+    <header>
+        <img src="images/site-logo.webp" alt="Site Logo" width="512" height="512">
+        <span>Travis Midgley | WDD231</span>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false"></button>    
+    </header>
+
+    <nav id="navMenu">
+        <a href="#">Home</a>
+        <a href="#">Chamber Project</a>
+        <a href="#">Final Project</a>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        <section class="intro-grid">
+            <section>
+            <h2>About Me</h2>
+            <p>
+                My name is Travis Midgley. I am 37 years old and live in Suprise, Arizona. My wife and I have 3 children: Giselle (11), Maximus (7) and Andy (3). I enjoy all sports but especially playing basketball and soccer. My family are Disney fanatics and you can often see us enjoying a churro at Disneyland or having a movie night watching a classic. I work as a Training & Operations Manager for a credit repair organization based out of Salt Lake City, Utah. I'm excited to continue learning how to become a world-class programmer.
+            </p>
+            </section>
+
+            <section>
+            <h2>Student Photo</h2>
+            <img src="images/student-photo.webp" alt="Student Photo" width="300" height="300">
+            </section>
+        </section>
+
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+
+            <button id="all">ALL</button>
+            <button id="cse">CSE</button>
+            <button id="wdd">WDD</button>
+            <button id="none">NONE</button>
+
+
+            <div id="courseContainer"></div>
+
+            <p id="creditsText">
+                The total credits for course listed above is <span id="totalCredits"></span>
+            </p>
+        </section>
+
+        <section class="social">
+            <a href="https://www.linkedin.com/in/travismidgley/" target="_blank">
+            <img src="images/linkedin.webp" alt="LinkedIn Logo" width="40" height="40">
+            </a>
     
+            <a href="https://github.com/tmidgley" target="_blank">
+            <img src="images/github.webp" alt="GitHub Logo" width="40" height="40">
+            </a>
+    
+            <a href="https://wa.me/+18017557563" target="_blank">
+            <img src="images/whatsapp.webp" alt="WhatsApp Logo" width="40" height="40">
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> • Travis Midgley • Arizona, USA</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
