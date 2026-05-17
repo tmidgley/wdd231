@@ -72,6 +72,12 @@ nav.open {
     display: block;
 }
 
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 nav a {
     display: block;
     padding: 1rem;
@@ -84,6 +90,24 @@ nav a {
 nav a:hover {
     background-color: #EE9B00;
     color: #222222;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    background-color: #004b5c;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu a {
+    font-size: 0.9rem;
+    background-color: #004b5c;
 }
 
 /* Main */

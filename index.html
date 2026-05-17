@@ -6,6 +6,22 @@
     <title>Travis Midgley | WDD231</title>
     <meta name="description" content="This webpage showcases web development coursework, student information, and completed programming classes as part of a frontend web development certificate program.">
     <meta name="author" content="Travis Midgley">
+    <link rel="icon" href="images/favicon.ico">
+
+<!--Social Media Meta Here-->
+    <meta property="og:title" content="Travis Midgley | WDD231">
+    <meta property="og:description"
+        content="This webpage showcases web development coursework, student information, and completed programming classes as part of a frontend web development certificate program.">
+    <meta property="og:url" content="https://tmidgley.github.io/wdd231/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://tmidgley.github.io/wdd231/images/site-logo.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GitHub">
+
+    <meta name="twitter:url" content="https://tmidgley.github.io/wdd231/">
+    <meta name="twitter:title" content="Travis Midgley | WDD231">
+    <meta name="twitter:description" content="This webpage showcases web development coursework, student information, and completed programming classes as part of a frontend web development certificate program.">
+    <meta name="twitter:card" content="summary">
 
 <!--Style Sheets Here-->
     <link rel="stylesheet" href="styles/normalize.css">
@@ -23,12 +39,22 @@
         <img src="images/site-logo.webp" alt="Site Logo" width="512" height="512">
         <span>Travis Midgley | WDD231</span>
         <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false"> </button>    
-</header>
+    </header>
 
     <nav id="navMenu">
-        <a href="#">Home</a>
-        <a href="#">Chamber Project</a>
-        <a href="#">Final Project</a>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+
+            <li class="dropdown">
+                <a href="#">Other Projects</a>
+
+                <ul class="submenu">
+                    <li><a href="prophets.html">Latter-Day Prophets</a></li>
+                </ul>
+            </li>
+        </ul>
     </nav>
 
     <main>

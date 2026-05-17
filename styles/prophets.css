@@ -1,0 +1,69 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap');
+
+/* Base page styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: #f4f7f9;
+    color: #222;
+}
+
+/* Main heading font */
+h1,
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Page heading */
+h1 {
+    text-align: center;
+    background-color: #1f4e79;
+    color: white;
+    padding: 1rem;
+    margin: 0;
+}
+
+/* Cards container */
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual card */
+#cards section {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* Prophet name */
+#cards h2 {
+    color: #1f4e79;
+    margin-bottom: 0.5rem;
+    min-height: 80px
+}
+
+/* Text inside cards */
+#cards p {
+    margin: 0.35rem 0;
+    font-size: 0.95rem;
+}
+
+/* Images */
+#cards img {
+    display: block;
+    margin: 0.75rem auto 0 auto;
+    width: 100%;
+    max-width: 260px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 6px;
+}
