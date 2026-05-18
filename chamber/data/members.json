@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Desert Bloom Coffee",
+            "address": "15201 W Bell Rd, Surprise, AZ 85374",
+            "phone": "(623) 555-1001",
+            "website": "https://www.desertbloomcoffee.com",
+            "image": "desert-bloom-coffee.webp",
+            "membershipLevel": 3,
+            "description": "Local coffee shop serving handcrafted drinks and pastries in Surprise."
+        },
+        {
+            "name": "Sun Valley Fitness",
+            "address": "16720 N Reems Rd, Surprise, AZ 85374",
+            "phone": "(623) 555-2034",
+            "website": "https://www.sunvalleyfitness.com",
+            "image": "sun-valley-fitness.webp",
+            "membershipLevel": 2,
+            "description": "Modern fitness center offering classes, personal training, and wellness programs."
+        },
+        {
+            "name": "West Valley Realty Group",
+            "address": "14050 N Litchfield Rd, Surprise, AZ 85379",
+            "phone": "(623) 555-9988",
+            "website": "https://www.westvalleyrealty.com",
+            "image": "west-valley-realty.webp",
+            "membershipLevel": 3,
+            "description": "Helping families buy and sell homes throughout the West Valley."
+        },
+        {
+            "name": "Surprise Tech Solutions",
+            "address": "12345 W Grand Ave, Surprise, AZ 85374",
+            "phone": "(623) 555-4521",
+            "website": "https://www.surprisetechsolutions.com",
+            "image": "surprise-tech-solutions.webp",
+            "membershipLevel": 1,
+            "description": "Technology support and IT consulting for local businesses."
+        },
+        {
+            "name": "Copper Canyon Grill",
+            "address": "15800 N Civic Center Plaza, Surprise, AZ 85374",
+            "phone": "(623) 555-8800",
+            "website": "https://www.coppercanyongrill.com",
+            "image": "copper-canyon-grill.webp",
+            "membershipLevel": 2,
+            "description": "Southwest-inspired dining with family-friendly atmosphere."
+        },
+        {
+            "name": "Sonoran Landscaping",
+            "address": "17025 W Greenway Rd, Surprise, AZ 85388",
+            "phone": "(623) 555-7342",
+            "website": "https://www.sonoranlandscaping.com",
+            "image": "sonoran-landscaping.webp",
+            "membershipLevel": 1,
+            "description": "Residential and commercial desert landscaping services."
+        },
+        {
+            "name": "Blue Sky Pediatrics",
+            "address": "14500 W Mountain View Blvd, Surprise, AZ 85374",
+            "phone": "(623) 555-6123",
+            "website": "https://www.blueskypediatrics.com",
+            "image": "blue-sky-pediatrics.webp",
+            "membershipLevel": 3,
+            "description": "Trusted pediatric healthcare provider serving Surprise families."
+        }
+    ]
+}

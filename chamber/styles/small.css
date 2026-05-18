@@ -1,0 +1,271 @@
+/* -------------------- */
+/* Google Fonts */
+/* -------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap');
+
+/* -------------------- */
+/* Root Variables */
+/* -------------------- */
+:root {
+    --primary-color: #005F73;
+    --secondary-color: #0A9396;
+    --accent-color: #EE9B00;
+    --light-color: #F8F9FA;
+    --dark-color: #222222;
+    --white: #FFFFFF;
+    --border-radius: 10px;
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* -------------------- */
+/* Base */
+/* -------------------- */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+h1,
+h2,
+h3,
+nav a,
+button,
+.site-branding span {
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+h2 {
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+
+p {
+    margin-bottom: 0.75rem;
+}
+
+/* -------------------- */
+/* Header */
+/* -------------------- */
+header {
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: auto 44px;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.site-branding {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.site-branding span {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-top: 10px;
+}
+
+/* -------------------- */
+/* Hamburger Button */
+/* -------------------- */
+#menu {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--dark-color);
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+/* -------------------- */
+/* Navigation */
+/* -------------------- */
+nav {
+    display: none;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: var(--white);
+    padding: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+}
+
+nav a.active {
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+}
+
+/* -------------------- */
+/* Directory Controls */
+/* -------------------- */
+.directory-controls {
+    text-align: center;
+}
+
+.view-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.view-buttons button {
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    transition: 0.3s;
+}
+
+.view-buttons button:hover {
+    background-color: var(--secondary-color);
+}
+
+.active-view {
+    background-color: var(--accent-color) !important;
+    color: var(--dark-color) !important;
+}
+
+/* -------------------- */
+/* Member Grid */
+/* -------------------- */
+#members.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* -------------------- */
+/* Member Cards */
+/* -------------------- */
+.member-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.member-card img {
+    margin: 0 auto 1rem;
+    object-fit: contain;
+}
+
+.member-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.member-card a {
+    display: inline-block;
+    margin: 0.75rem 0;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.member-card a:hover {
+    color: var(--accent-color);
+}
+
+.membership-level {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+/* -------------------- */
+/* List View */
+/* -------------------- */
+#members.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#members.list .member-card {
+    text-align: left;
+}
+
+#members.list .member-card img {
+    display: none;
+}
+
+/* -------------------- */
+/* Footer */
+/* -------------------- */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+footer h2 {
+    color: var(--white);
+}
+
+.footer-contact,
+.footer-social,
+.footer-project {
+    margin-bottom: 2rem;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin: 0 0.5rem;
+    color: var(--white);
+}
+
+.footer-social a:hover {
+    color: var(--accent-color);
+}
+
+/* -------------------- */
+/* Error Message */
+/* -------------------- */
+.error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,62 @@
+/* normalize.css */
+
+/* Use a consistent box model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+p,
+figure {
+    margin: 0;
+}
+
+/* Improve body defaults */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for form elements */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove default button styling */
+button {
+    cursor: pointer;
+}
+
+/* Remove list styles */
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+/* Improve anchor defaults */
+a {
+    text-decoration: none;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
