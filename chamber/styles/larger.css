@@ -21,7 +21,7 @@
     }
 
     nav {
-        display: flex !important;
+        display: flex;
         flex-direction: row;
         justify-content: flex-end;
         position: static;
@@ -32,19 +32,19 @@
 
     nav a {
         border: none;
-        color: var(--dark-color);
+        color: #222222;
         padding: 0.75rem 1rem;
-        border-radius: var(--border-radius);
+        border-radius: 10px;
         transition: 0.3s;
     }
 
     nav a:hover {
-        background-color: var(--primary-color);
-        color: var(--white);
+        background-color: #005F73;
+        color: #FFFFFF;
     }
 
     nav a.active {
-        color: var(--white);
+        color: #FFFFFF;
     }
 
     /* -------------------- */
@@ -82,7 +82,7 @@
 
     .member-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 6px 18px #BFBFBF;
     }
 
     /* -------------------- */
