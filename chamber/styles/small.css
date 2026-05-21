@@ -6,13 +6,17 @@
     --secondary-color: #0A9396;
     --accent-color: #EE9B00;
     --accent-dark: #8A4F00;
+
     --background-color: #F8F9FA;
     --text-color: #222222;
+
     --white: #FFFFFF;
     --black: #000000;
+
     --border-color: #DDDDDD;
     --nav-border: #4D8B99;
     --shadow-color: #D9D9D9;
+
     --error-color: #B00020;
 }
 
@@ -20,10 +24,10 @@
 /* Base */
 /* -------------------- */
 body {
+    margin: 0;
     font-family: 'Open Sans', Arial, sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
-    margin: 0;
 }
 
 h1,
@@ -75,18 +79,18 @@ button:focus {
 }
 
 /* -------------------- */
-/* Header and Navigation */
+/* Header */
 /* -------------------- */
 header {
     background-color: var(--white);
     display: grid;
-    grid-template-columns: 1fr 44px;
+    grid-template-columns: auto 44px;
     align-items: center;
     gap: 1rem;
     padding: 0.75rem 1rem;
     border-bottom: 1px solid var(--border-color);
     position: relative;
-    z-index: 10;
+    z-index: 100;
 }
 
 .site-branding {
@@ -96,8 +100,8 @@ header {
 }
 
 .site-branding img {
-    width: 150px;
-    height: 85px;
+    width: 70px;
+    height: auto;
 }
 
 .site-branding span {
@@ -106,14 +110,17 @@ header {
     color: var(--text-color);
 }
 
+/* -------------------- */
+/* Navigation */
+/* -------------------- */
 #menu {
-    background-color: var(--white);
+    background: none;
     border: none;
     color: var(--black);
     font-size: 2rem;
-    line-height: 1;
     width: 44px;
     height: 44px;
+    cursor: pointer;
 }
 
 #menu::before {
@@ -126,6 +133,7 @@ header {
 
 nav {
     display: none;
+    flex-direction: column;
     background-color: var(--primary-color);
     grid-column: 1 / 3;
     width: 100%;
@@ -133,13 +141,12 @@ nav {
 
 nav.open {
     display: flex;
-    flex-direction: column;
 }
 
 nav a {
     color: var(--white);
-    text-align: center;
     text-decoration: none;
+    text-align: center;
     padding: 1rem;
     border-top: 1px solid var(--nav-border);
 }
@@ -162,24 +169,14 @@ nav a.active {
 .spotlight-card {
     background-color: var(--white);
     border-radius: 10px;
+    padding: 1rem;
     box-shadow: 0 2px 8px var(--shadow-color);
-    padding: 1rem;   
-}
-
-.spotlight-card a {
-    color: #005F73;
-    font-weight: 600;
-}
-
-.spotlight-card a:hover {
-    color: #8A4F00;
 }
 
 /* -------------------- */
-/* Home Page */
+/* Hero */
 /* -------------------- */
 .hero {
-    text-align: center;
     margin-bottom: 2rem;
 }
 
@@ -192,17 +189,19 @@ nav a.active {
 
 .hero-content {
     background-color: var(--white);
-    padding: 1.25rem;
+    padding: 1.5rem;
+    text-align: center;
 }
 
 .hero-button {
     display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.25rem;
     background-color: var(--primary-color);
     color: var(--white);
     text-decoration: none;
-    font-weight: 700;
-    padding: 0.75rem 1.25rem;
     border-radius: 8px;
+    font-weight: 700;
 }
 
 .hero-button:hover {
@@ -210,6 +209,9 @@ nav a.active {
     color: var(--white);
 }
 
+/* -------------------- */
+/* Home Layout */
+/* -------------------- */
 .home-grid,
 .spotlight-grid {
     display: grid;
@@ -220,6 +222,13 @@ nav a.active {
     padding-left: 1.25rem;
 }
 
+.weather h3 {
+    margin-top: 1rem;
+}
+
+/* -------------------- */
+/* Spotlights */
+/* -------------------- */
 .spotlights h2 {
     text-align: center;
 }
@@ -234,6 +243,15 @@ nav a.active {
     object-fit: contain;
     display: block;
     margin: 0 auto 1rem;
+}
+
+.spotlight-card a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.spotlight-card a:hover {
+    color: var(--accent-dark);
 }
 
 .membership-level {
@@ -262,6 +280,7 @@ nav a.active {
     border: none;
     border-radius: 10px;
     padding: 0.75rem 1.5rem;
+    cursor: pointer;
 }
 
 .view-buttons button:hover {
@@ -273,6 +292,9 @@ nav a.active {
     color: var(--black);
 }
 
+/* -------------------- */
+/* Members */
+/* -------------------- */
 #members.grid {
     display: grid;
     gap: 1rem;
@@ -285,6 +307,14 @@ nav a.active {
 .member-card img {
     object-fit: contain;
     margin: 0 auto 1rem;
+}
+
+.member-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.member-card a {
+    font-weight: 600;
 }
 
 #members.list {
