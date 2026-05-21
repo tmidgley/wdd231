@@ -323,11 +323,16 @@ nav a.active {
 }
 
 #members.list .member-card {
+    display: block;
     text-align: left;
 }
 
 #members.list .member-card img {
     display: none;
+}
+
+#members.list .member-card p {
+    margin: 0.5rem 0;
 }
 
 /* -------------------- */
