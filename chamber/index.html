@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Home page for the Surprise Arizona Chamber of Commerce featuring events, weather, and local business spotlights.">
+    <meta name="author" content="Travis Midgley">
+
+    <title>Surprise Arizona Chamber of Commerce Home</title>
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap">
+    </noscript>
+
+    <!-- Facebook/Open Graph Meta Tags -->
+    <meta property="og:title" content="Surprise Arizona Chamber of Commerce">
+    <meta property="og:description"
+        content="Connect with businesses, events, and community resources in Surprise, Arizona.">
+    <meta property="og:image" content="https://tmidgley.github.io/wdd231/chamber/images/surprise-az-seal.webph">
+    <meta property="og:url" content="https://tmidgley.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Fetch Hero Image -->
+    <link rel="preload" as="image" href="images/surprise-hero.webp" fetchpriority="high">
+</head>
+
+<body>
+    <header>
+        <div class="site-branding">
+            <img src="images/surprise-az-seal.webp" alt="Surprise Arizona Chamber of Commerce logo" width="60"
+                height="60">
+            <span>Surprise Chamber of Commerce</span>
+        </div>
+
+        <button id="menu" type="button" aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="navigation"></button>
+
+        <nav id="navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/surprise-hero.webp" alt="Surprise Arizona desert landscape and community view" width="1200"
+                height="525" fetchpriority="high">
+            <div class="hero-content">
+                <h1>Surprise Chamber of Commerce</h1>
+                <p>Supporting local businesses and strengthening the Surprise, Arizona community.</p>
+                <a class="hero-button" href="join.html">Join the Chamber</a>
+            </div>
+        </section>
+
+        <section class="home-grid">
+            <section class="card events" aria-labelledby="events-heading">
+                <h2 id="events-heading">Current Events</h2>
+                <ul>
+                    <li><strong>Business Networking Breakfast:</strong> Wednesday at 8:00 AM</li>
+                    <li><strong>Small Business Workshop:</strong> Friday at 1:00 PM</li>
+                    <li><strong>Community Market:</strong> Saturday from 9:00 AM to 2:00 PM</li>
+                </ul>
+            </section>
+
+            <section class="card weather" aria-labelledby="weather-heading">
+                <h2 id="weather-heading">Weather</h2>
+                <p><strong>Current Temperature:</strong> <span id="current-temp">Loading...</span></p>
+                <p><strong>Condition:</strong> <span id="weather-description">Loading...</span></p>
+
+                <h3>Three Day Forecast</h3>
+                <div id="forecast">
+                    <p>Loading forecast...</p>
+                </div>
+            </section>
+        </section>
+
+        <section class="spotlights" aria-labelledby="spotlights-heading">
+            <h2 id="spotlights-heading">Business Spotlights</h2>
+            <div id="spotlight-cards" class="spotlight-grid">
+                <p>Loading featured chamber members...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <h2>Surprise Chamber of Commerce</h2>
+            <p>16000 N Civic Center Plaza</p>
+            <p>Surprise, AZ 85374</p>
+            <p>Email: info@surprisechamber.example</p>
+            <p>Phone: (623) 555-1234</p>
+        </div>
+
+        <div class="footer-social">
+            <h2>Connect With Us</h2>
+            <a href="#" target="_blank" rel="noopener">Facebook</a>
+            <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="#" target="_blank" rel="noopener">Instagram</a>
+        </div>
+
+        <div class="footer-project">
+            <p>&copy; <span id="currentyear"></span> Surprise Chamber of Commerce</p>
+            <p>Travis Midgley</p>
+            <p>WDD 231</p>
+            <p>Last Modified: <span id="lastmodified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+</body>
+
+</html>

@@ -1,19 +1,63 @@
 /* larger.css */
 
+@media screen and (min-width: 768px) {
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .hero {
+        max-width: 1100px;
+        margin: 0 auto 2rem;
+        position: relative;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 380px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .hero-content {
+        position: absolute;
+        left: 2rem;
+        bottom: 2rem;
+        max-width: 380px;
+        background-color: #FFFFFF;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px #D9D9D9;
+    }
+
+    .home-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .spotlight-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media screen and (min-width: 1070px) {
-
-    /* -------------------- */
-    /* Header */
-    /* -------------------- */
-
     header {
         grid-template-columns: auto 1fr;
         padding: 1rem 2rem;
     }
 
+    .site-branding {
+        gap: 1rem;
+    }
+
+    .site-branding img {
+        width: 150px;
+        height: 85px;
+    }
+
     .site-branding span {
         font-size: 1.6rem;
-        margin-top: 5px;
+        margin: 0;
     }
 
     #menu {
@@ -24,18 +68,18 @@
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        position: static;
-        background: none;
-        width: auto;
+        align-items: center;
+        grid-column: auto;
+        background-color: #FFFFFF;
         gap: 0.5rem;
+        width: auto;
     }
 
     nav a {
+        color: #000000;
         border: none;
-        color: #222222;
         padding: 0.75rem 1rem;
         border-radius: 10px;
-        transition: 0.3s;
     }
 
     nav a:hover {
@@ -44,17 +88,8 @@
     }
 
     nav a.active {
-        color: #FFFFFF;
-    }
-
-    /* -------------------- */
-    /* Main Layout */
-    /* -------------------- */
-
-    main {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 2rem;
+        background-color: #EE9B00;
+        color: #000000;
     }
 
     .directory-intro {
@@ -63,31 +98,9 @@
         text-align: center;
     }
 
-    /* -------------------- */
-    /* Directory Grid */
-    /* -------------------- */
-
     #members.grid {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
-
-    /* -------------------- */
-    /* Member Cards */
-    /* -------------------- */
-
-    .member-card {
-        transition: transform 0.3s ease,
-            box-shadow 0.3s ease;
-    }
-
-    .member-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 18px #BFBFBF;
-    }
-
-    /* -------------------- */
-    /* List View */
-    /* -------------------- */
 
     #members.list .member-card {
         display: grid;
@@ -101,10 +114,6 @@
         display: block;
         width: 100%;
     }
-
-    /* -------------------- */
-    /* Footer */
-    /* -------------------- */
 
     footer {
         display: grid;
