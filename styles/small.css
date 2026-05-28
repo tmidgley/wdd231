@@ -23,14 +23,14 @@ header span {
 
 /* Header */
 header {
-    background-color: white;
+    background-color: #FFFFFF;
     color: #222222;
     display: grid;
     grid-template-columns: 50px 1fr 44px;
     align-items: center;
     padding: 1rem;
     gap: 1rem;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #DDDDDD;
 }
 
 header img {
@@ -51,6 +51,7 @@ header span {
     border: none;
     color: #222222;
     cursor: pointer;
+    padding: 0;
 }
 
 .hamburger::before {
@@ -78,18 +79,29 @@ nav ul {
     padding: 0;
 }
 
+nav li {
+    margin: 0;
+}
+
 nav a {
     display: block;
     padding: 1rem;
-    color: white;
-    border-top: 1px solid #444;
+    color: #FFFFFF;
+    border-top: 1px solid #0A6F82;
     text-align: center;
     text-decoration: none;
+    font-weight: 600;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
     background-color: #EE9B00;
     color: #222222;
+}
+
+.dropdown>a::after {
+    content: " ▼";
+    font-size: 0.75rem;
 }
 
 .dropdown {
@@ -98,7 +110,7 @@ nav a:hover {
 
 .submenu {
     display: none;
-    background-color: #004b5c;
+    background-color: #004B5C;
 }
 
 .dropdown:hover .submenu {
@@ -107,7 +119,13 @@ nav a:hover {
 
 .submenu a {
     font-size: 0.9rem;
-    background-color: #004b5c;
+    background-color: #004B5C;
+    padding-left: 2rem;
+}
+
+.submenu a:hover {
+    background-color: #EE9B00;
+    color: #222222;
 }
 
 /* Main */
@@ -120,7 +138,7 @@ h1 {
     color: #005F73;
 }
 
-/* Intro Grid - mobile is one column */
+/* Intro Grid */
 .intro-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -130,8 +148,8 @@ h1 {
 
 .intro-grid section,
 .courses {
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
     border-radius: 6px;
     overflow: hidden;
 }
@@ -139,7 +157,7 @@ h1 {
 .intro-grid h2,
 .courses h2 {
     background-color: #005F73;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
     padding: 0.75rem;
     font-size: 1rem;
@@ -172,9 +190,10 @@ h1 {
     padding: 0.6rem 1.2rem;
     border: none;
     background-color: #005F73;
-    color: white;
+    color: #FFFFFF;
     border-radius: 6px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .courses>button:hover {
@@ -182,7 +201,7 @@ h1 {
     color: #222222;
 }
 
-/* Course Container - mobile is one column */
+/* Course Container */
 #courseContainer {
     display: grid;
     grid-template-columns: 1fr;
@@ -194,12 +213,20 @@ h1 {
 #courseContainer button {
     width: 100%;
     background-color: #F8F9FA;
-    border: 1px solid #ccc;
+    border: 1px solid #CCCCCC;
     padding: 0.75rem;
     border-radius: 6px;
     color: #222222;
     font-size: 0.8rem;
     word-break: break-word;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#courseContainer button:hover {
+    background-color: #005F73;
+    color: #FFFFFF;
+    transform: scale(1.02);
 }
 
 #courseContainer.empty {
@@ -226,6 +253,7 @@ h1 {
 .social img {
     width: 40px;
     height: 40px;
+    transition: 0.3s;
 }
 
 .social img:hover {
@@ -235,8 +263,43 @@ h1 {
 /* Footer */
 footer {
     background-color: #005F73;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
     padding: 1rem;
     font-size: 0.85rem;
+}
+
+/* Modal */
+#courseModal {
+    border: none;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 90%;
+    max-width: 500px;
+}
+
+#courseModal::backdrop {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.modal-content {
+    position: relative;
+}
+
+#closeModal {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #005F73;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#closeModal:hover {
+    background-color: #EE9B00;
+    color: #222222;
 }

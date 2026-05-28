@@ -2,9 +2,10 @@
 
 @media screen and (min-width: 768px) {
 
+    /* Header */
     header {
         grid-template-columns: 60px 1fr;
-        padding: 0.75rem 1rem;
+        padding: 0.75rem 2rem;
     }
 
     header img {
@@ -16,51 +17,85 @@
         font-size: 1.5rem;
     }
 
+    /* Hamburger */
     .hamburger {
         display: none;
     }
 
+    /* Navigation */
     nav {
+        display: block;
+        background-color: #005F73;
+    }
+
+    nav ul {
         display: flex;
         justify-content: center;
-        background-color: #005F73;
+        align-items: center;
+    }
+
+    nav li {
+        position: relative;
     }
 
     nav a {
         border: none;
-        flex: 1;
-        max-width: 250px;
+        padding: 1rem 1.5rem;
+        min-width: 160px;
+        transition: 0.3s;
     }
 
+    nav a:hover,
+    nav a.active {
+        background-color: #EE9B00;
+        color: #222222;
+    }
+
+    /* Dropdown */
     .submenu {
         display: none;
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: #004b5c;
-        min-width: 220px;
+        background-color: #004B5C;
+        min-width: 240px;
         z-index: 1000;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     }
 
     .dropdown:hover .submenu {
         display: block;
     }
 
-    .dropdown {
-        position: relative;
+    .submenu li {
+        width: 100%;
     }
 
     .submenu a {
-        max-width: none;
+        display: block;
+        width: 100%;
         text-align: left;
-        padding: 0.75rem 1rem;
+        padding: 0.85rem 1rem;
+        min-width: unset;
     }
 
+    .submenu a:hover {
+        background-color: #EE9B00;
+        color: #222222;
+    }
+
+    /* Main */
     main {
         max-width: 1200px;
         margin: 0 auto;
+        padding: 2rem;
     }
 
+    h1 {
+        margin-bottom: 1.5rem;
+    }
+
+    /* Intro Grid */
     .intro-grid {
         grid-template-columns: 2fr 1fr;
         align-items: stretch;
@@ -72,14 +107,37 @@
         height: 100%;
     }
 
+    .intro-grid p {
+        flex-grow: 1;
+    }
+
     .intro-grid img {
         max-width: 250px;
         margin: auto;
         padding: 1rem;
     }
 
+    /* Courses */
+    .courses {
+        margin-top: 1rem;
+    }
+
     #courseContainer {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    #courseContainer button {
+        font-size: 0.9rem;
+        min-height: 90px;
+    }
+
+    #courseContainer button:hover {
+        transform: scale(1.03);
+    }
+
+    /* Social */
+    .social {
+        padding-top: 2rem;
     }
 
     .social img {
@@ -87,7 +145,24 @@
         height: 50px;
     }
 
+    /* Modal */
+    #courseModal {
+        max-width: 600px;
+        padding: 2rem;
+    }
+
+    #modalTitle {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    #modalDescription {
+        line-height: 1.7;
+    }
+
+    /* Footer */
     footer {
         font-size: 1rem;
+        padding: 1.5rem;
     }
 }
