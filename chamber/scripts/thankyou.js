@@ -7,5 +7,7 @@ document.querySelector("#email").textContent = formData.get("email");
 document.querySelector("#phone").textContent = formData.get("phone");
 document.querySelector("#organization").textContent = formData.get("organization");
 
-const timestamp = formData.get("timestamp");
-document.querySelector("#timestamp").textContent = timestamp;
+const timestamp = new Date(formData.get("timestamp"));
+
+document.querySelector("#timestamp").textContent =
+    timestamp.toLocaleString();
