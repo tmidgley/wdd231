@@ -44,10 +44,11 @@ const courses = [
 ];
 
 const courseContainer = document.querySelector("#courseContainer");
-courseContainer.classList.add("empty");
-    
 const totalCredits = document.querySelector("#totalCredits");
 const creditsText = document.querySelector("#creditsText");
+const courseDetails = document.querySelector("#courseModal");
+
+courseContainer.classList.add("empty");
 
 function displayCourses(courseList) {
     courseContainer.innerHTML = "";
@@ -60,12 +61,7 @@ function displayCourses(courseList) {
         courseButton.classList.add("course-card");
 
         courseButton.addEventListener("click", () => {
-            document.querySelector("#modalTitle").textContent = `${course.code}: ${course.name}`;
-            document.querySelector("#modalDescription").textContent = course.description;
-            document.querySelector("#modalCredits").textContent = course.credits;
-            document.querySelector("#modalCertificate").textContent = course.certificate;
-
-            document.querySelector("#courseModal").showModal();
+            displayCourseDetails(course);
         });
 
         courseContainer.appendChild(courseButton);
@@ -77,30 +73,43 @@ function displayCourses(courseList) {
     creditsText.style.display = "block";
 }
 
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+        <button id="closeModal" aria-label="Close course details">❌</button>
+
+        <h2>${course.code}</h2>
+
+        <h3>${course.name}</h3>
+
+        <p><strong>Credits:</strong> ${course.credits}</p>
+
+        <p><strong>Certificate:</strong> ${course.certificate}</p>
+
+        <p>${course.description}</p>
+    `;
+
+    courseDetails.showModal();
+
+    document.querySelector("#closeModal").addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
+
 document.querySelector("#all").addEventListener("click", () => {
     displayCourses(courses);
 });
 
 document.querySelector("#cse").addEventListener("click", () => {
-    displayCourses(
-        courses.filter(course => course.code.startsWith("CSE"))
-    );
+    displayCourses(courses.filter(course => course.code.startsWith("CSE")));
 });
 
 document.querySelector("#wdd").addEventListener("click", () => {
-    displayCourses(
-        courses.filter(course => course.code.startsWith("WDD"))
-    );
+    displayCourses(courses.filter(course => course.code.startsWith("WDD")));
 });
 
 document.querySelector("#none").addEventListener("click", () => {
     courseContainer.innerHTML = "";
     totalCredits.textContent = "";
     creditsText.style.display = "none";
-
     courseContainer.classList.add("empty");
-});
-
-document.querySelector("#closeModal").addEventListener("click", () => {
-    document.querySelector("#courseModal").close();
 });

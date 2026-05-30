@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Join the Surprise Arizona Chamber of Commerce by completing a membership application form.">
+    <meta name="author" content="Travis Midgley">
+
+    <title>Thank You | Surprise Arizona Chamber of Commerce</title>
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap">
+    </noscript>
+
+    <!-- Facebook/Open Graph Meta Tags -->
+    <meta property="og:title" content="Surprise Arizona Chamber of Commerce">
+    <meta property="og:description"
+        content="Connect with businesses, events, and community resources in Surprise, Arizona.">
+    <meta property="og:image" content="https://tmidgley.github.io/wdd231/chamber/images/surprise-az-seal.webp">
+    <meta property="og:url" content="https://tmidgley.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="site-branding">
+            <img src="images/surprise-az-seal.webp" alt="Surprise Arizona Chamber of Commerce logo" width="60"
+                height="60">
+            <span>Surprise Chamber of Commerce</span>
+        </div>
+
+        <button id="menu" type="button" aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="navigation"></button>
+
+        <nav id="navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Thank You for Joining!</h1>
+
+        <section class="thankyou-card">
+            <p>We appreciate your interest in the Surprise Chamber of Commerce.</p>
+
+            <h2>Your Application Information</h2>
+
+            <p><strong>First Name:</strong> <span id="firstName"></span></p>
+            <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Mobile Phone:</strong> <span id="phone"></span></p>
+            <p><strong>Business Name:</strong> <span id="organization"></span></p>
+            <p><strong>Date Submitted:</strong> <span id="timestamp"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <h2>Surprise Chamber of Commerce</h2>
+            <p>16000 N Civic Center Plaza</p>
+            <p>Surprise, AZ 85374</p>
+            <p>Email: info@surprisechamber.example</p>
+            <p>Phone: (623) 555-1234</p>
+        </div>
+
+        <div class="footer-social">
+            <h2>Connect With Us</h2>
+            <a href="#" target="_blank" rel="noopener">Facebook</a>
+            <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="#" target="_blank" rel="noopener">Instagram</a>
+        </div>
+
+        <div class="footer-project">
+            <p>&copy; <span id="currentyear"></span> Surprise Chamber of Commerce</p>
+            <p>Travis Midgley</p>
+            <p>WDD 231</p>
+            <p>Last Modified: <span id="lastmodified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</body>
+
+</html>

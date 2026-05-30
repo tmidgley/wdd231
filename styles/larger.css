@@ -146,23 +146,23 @@
     }
 
     /* Modal */
-    #courseModal {
-        max-width: 600px;
+    dialog {
+        max-width: 700px;
         padding: 2rem;
     }
 
-    #modalTitle {
-        font-size: 1.5rem;
+    dialog h2 {
+        font-size: 1.6rem;
         margin-bottom: 1rem;
     }
 
-    #modalDescription {
+    dialog p {
+        font-size: 1rem;
         line-height: 1.7;
     }
 
-    /* Footer */
-    footer {
-        font-size: 1rem;
-        padding: 1.5rem;
+    dialog button {
+        top: 1.25rem;
+        right: 1.25rem;
     }
 }

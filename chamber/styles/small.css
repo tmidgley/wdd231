@@ -6,17 +6,13 @@
     --secondary-color: #0A9396;
     --accent-color: #EE9B00;
     --accent-dark: #8A4F00;
-
     --background-color: #F8F9FA;
     --text-color: #222222;
-
     --white: #FFFFFF;
     --black: #000000;
-
     --border-color: #DDDDDD;
     --nav-border: #4D8B99;
     --shadow-color: #D9D9D9;
-
     --error-color: #B00020;
 }
 
@@ -73,7 +69,10 @@ a:hover {
 }
 
 a:focus,
-button:focus {
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
     outline: 3px solid var(--accent-color);
     outline-offset: 3px;
 }
@@ -336,6 +335,144 @@ nav a.active {
 }
 
 /* -------------------- */
+/* Join Page */
+/* -------------------- */
+.join-layout {
+    display: grid;
+    gap: 2rem;
+}
+
+.join-form {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.join-form label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+    display: block;
+    width: 100%;
+    margin-top: 0.35rem;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+.join-form textarea {
+    min-height: 120px;
+}
+
+.join-form input[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.join-form input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+.membership-cards {
+    margin-bottom: 0;
+}
+
+.membership-cards h2 {
+    text-align: center;
+}
+
+.membership-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.membership-card {
+    background-color: var(--white);
+    padding: 1.5rem;
+    margin-bottom: 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    animation: cardFade 0.8s ease forwards;
+}
+
+.membership-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.membership-card p {
+    margin-bottom: 1rem;
+}
+
+.membership-card button,
+dialog button {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.membership-card button:hover,
+dialog button:hover {
+    background-color: var(--accent-dark);
+    color: var(--white);
+}
+
+dialog {
+    border: none;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 2px 12px var(--black);
+}
+
+dialog h2 {
+    margin-top: 0;
+}
+
+dialog ul {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+dialog li {
+    margin-bottom: 0.5rem;
+}
+
+dialog button {
+    margin-top: 1rem;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes cardFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* -------------------- */
 /* Footer */
 /* -------------------- */
 footer {
@@ -372,4 +509,17 @@ footer h2 {
     color: var(--error-color);
     font-weight: 700;
     text-align: center;
+}
+
+.thankyou-card {
+    background-color: var(--white);
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.thankyou-card p {
+    margin-bottom: 1rem;
 }

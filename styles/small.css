@@ -270,36 +270,159 @@ footer {
 }
 
 /* Modal */
-#courseModal {
-    border: none;
-    border-radius: 10px;
+dialog {
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: 0.5rem;
     padding: 1.5rem;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 3rem #777777;
     width: 90%;
-    max-width: 500px;
-}
-
-#courseModal::backdrop {
-    background-color: rgba(0, 0, 0, 0.65);
-}
-
-.modal-content {
+    max-width: 600px;
     position: relative;
 }
 
-#closeModal {
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
     position: absolute;
-    top: -1rem;
-    right: -1rem;
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 50%;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid rgb(0 0 0 / 10%);
     background-color: #005F73;
     color: #FFFFFF;
+    border-radius: 50%;
     cursor: pointer;
 }
 
-#closeModal:hover {
+dialog button:hover {
     background-color: #EE9B00;
     color: #222222;
+}
+
+/* Page Load Animation */
+.intro-grid section,
+.courses {
+    animation: fadeUp 0.8s ease-out both;
+}
+
+.intro-grid section:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.courses {
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cactus-fall {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.cactus-fall span {
+    position: absolute;
+    top: -80px;
+    font-size: 1.6rem;
+    opacity: 0;
+    user-select: none;
+    animation: oneTimeFall 4s ease-in forwards;
+}
+
+.cactus-fall span:nth-child(1) {
+    left: 4%;
+    animation-duration: 3.4s;
+}
+
+.cactus-fall span:nth-child(2) {
+    left: 12%;
+    animation-duration: 4.1s;
+    font-size: 1.3rem;
+}
+
+.cactus-fall span:nth-child(3) {
+    left: 20%;
+    animation-duration: 3.7s;
+}
+
+.cactus-fall span:nth-child(4) {
+    left: 28%;
+    animation-duration: 4.4s;
+    font-size: 1.4rem;
+}
+
+.cactus-fall span:nth-child(5) {
+    left: 36%;
+    animation-duration: 3.2s;
+}
+
+.cactus-fall span:nth-child(6) {
+    left: 44%;
+    animation-duration: 4.6s;
+    font-size: 1.3rem;
+}
+
+.cactus-fall span:nth-child(7) {
+    left: 52%;
+    animation-duration: 3.8s;
+}
+
+.cactus-fall span:nth-child(8) {
+    left: 60%;
+    animation-duration: 4.2s;
+    font-size: 1.4rem;
+}
+
+.cactus-fall span:nth-child(9) {
+    left: 68%;
+    animation-duration: 3.5s;
+}
+
+.cactus-fall span:nth-child(10) {
+    left: 76%;
+    animation-duration: 4.5s;
+    font-size: 1.3rem;
+}
+
+.cactus-fall span:nth-child(11) {
+    left: 84%;
+    animation-duration: 3.9s;
+}
+
+.cactus-fall span:nth-child(12) {
+    left: 92%;
+    animation-duration: 4.3s;
+    font-size: 1.4rem;
+}
+
+@keyframes oneTimeFall {
+    0% {
+        transform: translateY(-80px) rotate(0deg);
+        opacity: 0.8;
+    }
+
+    70% {
+        opacity: 0.45;
+    }
+
+    100% {
+        transform: translateY(105vh) rotate(360deg);
+        opacity: 0;
+    }
 }

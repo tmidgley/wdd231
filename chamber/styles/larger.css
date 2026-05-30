@@ -38,6 +38,15 @@
     .spotlight-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .join-layout {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+
+    .membership-cards h2 {
+        text-align: left;
+    }
 }
 
 @media screen and (min-width: 1070px) {
