@@ -457,7 +457,7 @@ dialog button {
 }
 
 dialog::backdrop {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--black-overlay);
 }
 
 @keyframes cardFade {
