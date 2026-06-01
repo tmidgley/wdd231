@@ -1,0 +1,390 @@
+#loading-screen {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(to top, #87CEEB 0%, #BFE9FF 60%, #F8FCFF 100%);
+    overflow: hidden;
+    z-index: 9999;
+    animation: hideLoader 0.8s ease forwards;
+    animation-delay: 4.8s;
+}
+
+.landscape {
+    position: absolute;
+    inset: 0;
+    z-index: 4;
+    animation: landscapeMove 4.8s ease-in-out forwards;
+}
+
+.grass {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 170px;
+    background: linear-gradient(to top, #6DBE45, #9BE564);
+    border-top-left-radius: 50% 35%;
+    border-top-right-radius: 50% 35%;
+    z-index: 6;
+}
+
+.tree {
+    position: absolute;
+    bottom: 115px;
+    width: 26px;
+    height: 110px;
+    background-color: #3B2412;
+    border-radius: 12px;
+    z-index: 7;
+}
+
+.tree::before {
+    content: "";
+    position: absolute;
+    bottom: 65px;
+    left: -35px;
+    width: 95px;
+    height: 125px;
+    background-color: #3F9B2F;
+    border-radius: 50% 50% 45% 45%;
+}
+
+.tree1 {
+    left: 7%;
+}
+
+.tree2 {
+    left: 18%;
+    transform: scale(0.8);
+}
+
+.tree3 {
+    right: 12%;
+    transform: scale(0.9);
+}
+
+.mountain {
+    position: absolute;
+    bottom: 130px;
+    width: 0;
+    height: 0;
+    z-index: 4;
+}
+
+.mountain1 {
+    left: -5%;
+    border-left: 260px solid transparent;
+    border-right: 260px solid transparent;
+    border-bottom: 340px solid #8EA9BF;
+}
+
+.mountain2 {
+    right: -3%;
+    border-left: 230px solid transparent;
+    border-right: 230px solid transparent;
+    border-bottom: 300px solid #7C95A9;
+}
+
+.mountain::after {
+    content: "";
+    position: absolute;
+    left: -65px;
+    top: 55px;
+    width: 130px;
+    height: 80px;
+    background-color: #F8FCFF;
+    clip-path: polygon(50% 0, 100% 100%, 65% 75%, 50% 100%, 35% 75%, 0 100%);
+}
+
+.cloud {
+    position: absolute;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    opacity: 0;
+    z-index: 6;
+    animation: cloudReveal 4.8s ease-in-out forwards,
+        cloudMove 6s linear forwards;
+}
+
+.cloud::before,
+.cloud::after {
+    content: "";
+    position: absolute;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.cloud1 {
+    width: 180px;
+    height: 60px;
+    top: 8%;
+    left: 5%;
+    animation-duration: 4.8s, 10s;
+}
+
+.cloud1::before {
+    width: 70px;
+    height: 70px;
+    top: -30px;
+    left: 25px;
+}
+
+.cloud1::after {
+    width: 90px;
+    height: 90px;
+    top: -40px;
+    right: 25px;
+}
+
+.cloud2 {
+    width: 230px;
+    height: 70px;
+    top: 28%;
+    left: -300px;
+    animation-duration: 4.8s, 6.5s;
+}
+
+.cloud2::before {
+    width: 85px;
+    height: 85px;
+    top: -35px;
+    left: 35px;
+}
+
+.cloud2::after {
+    width: 105px;
+    height: 105px;
+    top: -45px;
+    right: 35px;
+}
+
+.cloud3 {
+    width: 150px;
+    height: 50px;
+    top:45%;
+    left: -700px;
+    animation-duration: 4.8s, 6s;
+}
+
+.cloud3::before {
+    width: 60px;
+    height: 60px;
+    top: -25px;
+    left: 20px;
+}
+
+.cloud3::after {
+    width: 75px;
+    height: 75px;
+    top: -35px;
+    right: 20px;
+}
+
+.cloud4 {
+    width: 320px;
+    height: 90px;
+    top: 13%;
+    left: 50%;
+    z-index: 9;
+    transform: translateX(-50%);
+    animation: coverCloudReveal 4.8s ease-in-out forwards;
+}
+
+.cloud4::before {
+    width: 120px;
+    height: 120px;
+    top: -50px;
+    left: 40px;
+}
+
+.cloud4::after {
+    width: 150px;
+    height: 150px;
+    top: -65px;
+    right: 45px;
+}
+
+.cloud5 {
+    width: 200px;
+    height: 70px;
+    top: 18%;
+    left: 70%;
+    animation-duration: 4.8s, 12s;
+}
+
+.cloud5::before {
+    width: 80px;
+    height: 80px;
+    top: -30px;
+    left: 25px;
+}
+
+.cloud5::after {
+    width: 100px;
+    height: 100px;
+    top: -45px;
+    right: 30px;
+}
+
+.cloud6 {
+    width: 260px;
+    height: 80px;
+    top: 15%;
+    left: -1000px;
+    animation-duration: 4.8s, 7.5s;
+}
+
+.cloud6::before {
+    width: 90px;
+    height: 90px;
+    top: -35px;
+    left: 35px;
+}
+
+.cloud6::after {
+    width: 120px;
+    height: 120px;
+    top: -50px;
+    right: 35px;
+}
+
+.cloud7 {
+    width: 180px;
+    height: 60px;
+    top: 60%;
+    left: -1300px;
+    animation-duration: 4.8s, 9.5s;
+}
+
+.cloud7::before {
+    width: 70px;
+    height: 70px;
+    top: -25px;
+    left: 20px;
+}
+
+.cloud7::after {
+    width: 85px;
+    height: 85px;
+    top: -35px;
+    right: 20px;
+}
+
+#loading-balloon {
+    position: absolute;
+    left: 50%;
+    bottom: 16%;
+    width: 60vw;
+    max-width: 700px;
+    height: auto;
+    transform: translateX(-50%);
+    z-index: 5;
+    animation: balloonSway 4.8s ease-in-out forwards;
+}
+
+@keyframes balloonSway {
+    0% {
+        bottom: 16%;
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    15% {
+        bottom: 28%;
+        transform: translateX(-53%) rotate(-4deg);
+    }
+
+    30% {
+        bottom: 42%;
+        transform: translateX(-47%) rotate(3deg);
+    }
+
+    45% {
+        bottom: 58%;
+        transform: translateX(-52%) rotate(-2deg);
+    }
+
+    60% {
+        bottom: 78%;
+        transform: translateX(-48%) rotate(2deg);
+    }
+
+    75% {
+        bottom: 98%;
+        transform: translateX(-51%) rotate(-1deg);
+    }
+
+    100% {
+        bottom: 135%;
+        transform: translateX(-50%) rotate(0deg);
+    }
+}
+
+@keyframes landscapeMove {
+
+    0%,
+    12% {
+        transform: translateY(0);
+    }
+
+    55% {
+        transform: translateY(90vh);
+    }
+
+    100% {
+        transform: translateY(150vh);
+    }
+}
+
+@keyframes cloudReveal {
+    0% {
+        opacity: 0;
+    }
+
+    8% {
+        opacity: 0.4;
+    }
+
+    18% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0.95;
+    }
+}
+
+@keyframes coverCloudReveal {
+
+    0%,
+    22% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.5;
+    }
+
+    60% {
+        opacity: 0.95;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes cloudMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(100vw + 500px));
+    }
+}
+
+@keyframes hideLoader {
+    to {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
