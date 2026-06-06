@@ -319,21 +319,21 @@ nav a.active {
     font-weight: 600;
 }
 
-#members.list {
+.list {
     display: grid;
     gap: 1rem;
 }
 
-#members.list .member-card {
+.list .member-card {
     display: block;
     text-align: left;
 }
 
-#members.list .member-card img {
+.list .member-card img {
     display: none;
 }
 
-#members.list .member-card p {
+.list .member-card p {
     margin: 0.5rem 0;
 }
 
@@ -374,7 +374,7 @@ nav a.active {
     min-height: 120px;
 }
 
-.join-form input[type="submit"] {
+.submit-button {
     background-color: var(--primary-color);
     color: var(--white);
     border: none;
@@ -382,7 +382,7 @@ nav a.active {
     font-weight: 700;
 }
 
-.join-form input[type="submit"]:hover {
+.submit-button:hover {
     background-color: var(--secondary-color);
 }
 
