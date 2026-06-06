@@ -167,7 +167,10 @@ nav a.active {
 .card,
 .member-card,
 .spotlight-card,
-.discover-card {
+.discover-card,
+.join-form,
+.membership-card,
+.thankyou-card {
     background-color: var(--white);
     border-radius: 10px;
     padding: 1rem;
@@ -345,13 +348,6 @@ nav a.active {
     gap: 2rem;
 }
 
-.join-form {
-    background-color: var(--white);
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px var(--shadow-color);
-}
-
 .join-form label {
     display: block;
     margin-bottom: 1rem;
@@ -514,15 +510,6 @@ footer h2 {
     text-align: center;
 }
 
-.thankyou-card {
-    background-color: var(--white);
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px var(--shadow-color);
-}
-
 .thankyou-card p {
     margin-bottom: 1rem;
 }
@@ -552,7 +539,6 @@ footer h2 {
 }
 
 .discover-card {
-    border: 1px solid var(--border-color);
     overflow: hidden;
 }
 
