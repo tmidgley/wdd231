@@ -3,14 +3,14 @@ import { places } from "../data/discover.mjs";
 const cardsContainer = document.querySelector("#discover-cards");
 
 function displayPlaces(places) {
-    places.forEach((place) => {
+    places.forEach((place,index) => {
         const card = document.createElement("section");
         card.classList.add("discover-card");
 
         card.innerHTML = `
             <h2>${place.name}</h2>
             <figure>
-                <img src="${place.image}" alt="${place.name}" loading="lazy" width="600" height="400">
+                <img src="${place.image}" alt="${place.name}" loading="${index === 0 ? "eager" : "lazy"}" width="600" height="400">
             </figure>
             <address>${place.address}</address>
             <p>${place.description}</p>
