@@ -166,7 +166,8 @@ nav a.active {
 /* -------------------- */
 .card,
 .member-card,
-.spotlight-card {
+.spotlight-card,
+.discover-card {
     background-color: var(--white);
     border-radius: 10px;
     padding: 1rem;
@@ -267,7 +268,8 @@ nav a.active {
     text-align: center;
 }
 
-.view-buttons {
+.view-buttons,
+.discover-card button {
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -550,11 +552,8 @@ footer h2 {
 }
 
 .discover-card {
-    background-color: var(--white);
     border: 1px solid var(--border-color);
-    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 2px 8px var(--shadow-color);
 }
 
 .discover-card:nth-child(1) {
@@ -625,11 +624,5 @@ footer h2 {
 
 .discover-card button {
     margin: 0 1rem 1rem;
-    padding: 0.75rem 1rem;
-    border: none;
     border-radius: 6px;
-    background-color: var(--primary-color);
-    color: var(--white);
-    font-weight: 600;
-    cursor: pointer;
 }

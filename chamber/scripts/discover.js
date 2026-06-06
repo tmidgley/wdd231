@@ -10,7 +10,7 @@ function displayPlaces(places) {
         card.innerHTML = `
             <h2>${place.name}</h2>
             <figure>
-                <img src="${place.image}" alt="${place.name}" loading="lazy" width="300" height="200">
+                <img src="${place.image}" alt="${place.name}" loading="lazy" width="600" height="400">
             </figure>
             <address>${place.address}</address>
             <p>${place.description}</p>
