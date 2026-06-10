@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full of Hot Air | Form Confirmation</title>
+    <meta name="description" content="Newsletter signup confirmation for Full of Hot Air.">
+    <meta name="author" content="Travis Midgley">
+
+    <meta property="og:title" content="Full of Hot Air | Form Confirmation">
+    <meta property="og:description" content="Confirmation page for newsletter signups.">
+    <meta property="og:url" content="https://tmidgley.github.io/wdd231/final/form-action.html">
+    <meta property="og:image" content="https://tmidgley.github.io/wdd231/final/images/site-logo.webp">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/main.js" type="module" defer></script>
+    <script src="scripts/form-action.js" type="module" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/site-logo.webp" alt="Full of Hot Air logo" class="logo">
+
+        <button id="menuButton" aria-label="Open navigation menu">☰</button>
+
+        <nav id="navMenu" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="festivals.html">Festivals</a>
+            <a href="newsletter.html">Newsletter</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Thank You!</h1>
+
+        <section>
+            <h2>Your Newsletter Information</h2>
+            <div id="formResults"></div>
+            <p><a href="newsletter.html" class="button">
+                 Return to Newsletter
+                </a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Full of Hot Air</p>
+        <p><a href="attributions.html">Attributions</a></p>
+        <p><a href="#">Video Demonstration</a></p>
+    </footer>
+</body>
+
+</html>

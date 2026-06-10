@@ -1,7 +1,30 @@
 @media screen and (min-width: 768px) {
-    h1 {
-        font-size: 2.75rem;
+
+    /* Header */
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
     }
+
+    .logo {
+        width: 220px;
+        margin: 0;
+    }
+
+    #menuButton {
+        display: none;
+    }
+
+    #navMenu {
+        display: flex;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    /* Main Layout */
 
     main {
         max-width: 1100px;
@@ -9,21 +32,45 @@
         padding: 2rem;
     }
 
+    h1 {
+        font-size: 2.75rem;
+    }
+
     section {
         padding: 2rem;
-        margin-bottom: 1.5rem;
     }
 
-    section:nth-of-type(4),
-    section:nth-of-type(5) {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 1rem;
-        align-items: start;
+    /* Hero */
+
+    .hero {
+        position: relative;
     }
 
-    section:nth-of-type(4) h2,
-    section:nth-of-type(5) h2 {
-        grid-column: 1 / -1;
+    .hero-content {
+        position: absolute;
+        left: 2rem;
+        bottom: 2rem;
+        max-width: 460px;
+        border-radius: 12px;
+        background-color: rgb(255 255 255 / 90%);
+    }
+
+    /* Home Page */
+
+    .featured-card {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    /* Festival Cards */
+
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    /* Newsletter Form */
+
+    form {
+        max-width: 700px;
     }
 }

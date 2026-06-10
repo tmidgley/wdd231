@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sign up for Full of Hot Air newsletter updates about hot air balloon festivals and rides.">
+    <meta name="author" content="Travis Midgley">
+
+    <title>Full of Hot Air | Newsletter</title>
+
+    <meta property="og:title" content="Full of Hot Air | Newsletter">
+    <meta property="og:description"
+        content="Sign up for hot air balloon festival updates, ride tips, and scenic ballooning destinations.">
+    <meta property="og:url" content="https://tmidgley.github.io/wdd231/final/newsletter.html">
+    <meta property="og:image" content="https://tmidgley.github.io/wdd231/final/images/site-logo.webp">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/main.js" type="module" defer></script>
+    <script src="scripts/newsletter.js" type="module" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/site-logo.webp" alt="Full of Hot Air logo" class="logo">
+
+        <button id="menuButton" aria-label="Open navigation menu">☰</button>
+
+        <nav id="navMenu" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="festivals.html">Festivals</a>
+            <a href="newsletter.html" class="active">Newsletter</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join the Newsletter</h1>
+
+        <section>
+            <h2>Stay Up in the Air</h2>
+            <p>
+                Sign up to receive updates about balloon festivals, ride tips,
+                and scenic ballooning destinations.
+            </p>
+
+            <form method="get" action="form-action.html">
+                <label>
+                    First Name
+                    <input type="text" name="firstName" id="firstName" required>
+                </label>
+
+                <label>
+                    Email
+                    <input type="email" name="email" id="email" required>
+                </label>
+
+                <label>
+                    Favorite Balloon Activity
+                    <select name="activity" id="activity" required>
+                        <option value="">Choose one...</option>
+                        <option value="festivals">Festivals</option>
+                        <option value="rides">Balloon Rides</option>
+                        <option value="photography">Photography</option>
+                        <option value="history">Balloon History</option>
+                    </select>
+                </label>
+
+                <label class="checkbox-label">
+                    <input type="checkbox" name="updates" id="updates">
+                    Send me monthly balloon updates
+                </label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <button type="submit" class="button">Sign Up</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Full of Hot Air</p>
+        <p><a href="attributions.html">Attributions</a></p>
+        <p><a href="YOUR_DEMONSTRATION_VIDEO_LINK">Project Demonstration Video</a></p>
+    </footer>
+</body>
+
+</html>

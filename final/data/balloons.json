@@ -1,0 +1,167 @@
+[
+    {
+        "name": "Arizona Balloon Classic",
+        "location": "Goodyear, Arizona",
+        "month": "January",
+        "highlight": "Arizona's premier balloon festival near Phoenix.",
+        "attendance": "Thousands of visitors",
+        "image": "images/arizona-balloon-classic.webp",
+        "bestFor": "Families, photography, and balloon glows",
+        "details": "Features morning launches, evening balloon glows, food vendors, and family entertainment in the Phoenix metro area.",
+        "website": "https://abcfest.com"
+    },
+    {
+        "name": "Page Lake Powell Balloon Regatta",
+        "location": "Page, Arizona",
+        "month": "November",
+        "highlight": "Colorful balloons launch above Lake Powell and red rock cliffs.",
+        "attendance": "Visitors from across the Southwest",
+        "image": "images/page-balloon-regatta.webp",
+        "bestFor": "Scenery and photography",
+        "details": "One of the most scenic balloon events in Arizona, offering incredible views of Lake Powell and the surrounding desert landscape.",
+        "website": "https://www.visitpageaz.com"
+    },
+    {
+        "name": "Eyes to the Sky Balloon Festival",
+        "location": "Salina, Utah",
+        "month": "June",
+        "highlight": "Beautiful mountain valley launches and family activities.",
+        "attendance": "Regional visitors",
+        "image": "images/eyes-to-the-sky.webp",
+        "bestFor": "Family trips and mountain scenery",
+        "details": "A favorite Utah balloon festival featuring launches, entertainment, and activities in a picturesque valley setting.",
+        "website": "https://eyestotheskyballoonfestival.com"
+    },
+    {
+        "name": "Albuquerque International Balloon Fiesta",
+        "location": "Albuquerque, New Mexico",
+        "month": "October",
+        "highlight": "The largest balloon festival in the world.",
+        "attendance": "800,000+ visitors",
+        "image": "images/albuquerque-fiesta.webp",
+        "bestFor": "Bucket-list balloon enthusiasts",
+        "details": "Hundreds of balloons launch simultaneously during the famous Mass Ascension events.",
+        "website": "https://balloonfiesta.com"
+    },
+    {
+        "name": "Panguitch Valley Balloon Rally",
+        "location": "Panguitch, Utah",
+        "month": "June",
+        "highlight": "Balloons launch near Bryce Canyon Country.",
+        "attendance": "Festival visitors",
+        "image": "images/panguitch-balloon-rally.webp",
+        "bestFor": "Bryce Canyon travelers",
+        "details": "Offers beautiful sunrise launches and a small-town festival atmosphere.",
+        "website": "https://www.panguitchballoonrally.com"
+    },
+    {
+        "name": "Colorado Springs Labor Day Lift Off",
+        "location": "Colorado Springs, Colorado",
+        "month": "September",
+        "highlight": "Rocky Mountain views and mass ascensions.",
+        "attendance": "Thousands of visitors",
+        "image": "images/colorado-springs-liftoff.webp",
+        "bestFor": "Mountain scenery",
+        "details": "Balloons rise against the backdrop of Pikes Peak and the Rocky Mountains.",
+        "website": "https://coloradosprings.gov"
+    },
+    {
+        "name": "Great Reno Balloon Race",
+        "location": "Reno, Nevada",
+        "month": "September",
+        "highlight": "One of the world's largest free ballooning events.",
+        "attendance": "120,000+ visitors",
+        "image": "images/great-reno-balloon-race.webp",
+        "bestFor": "Large balloon launches and family events",
+        "details": "Known for its Dawn Patrol and Glow Show, this event attracts pilots and spectators from around the world.",
+        "website": "https://renoballoon.com"
+    },
+    {
+        "name": "National Balloon Classic",
+        "location": "Indianola, Iowa",
+        "month": "July",
+        "highlight": "Competitive ballooning and nightly entertainment.",
+        "attendance": "Thousands of visitors",
+        "image": "images/national-balloon-classic.webp",
+        "bestFor": "Competitive balloon enthusiasts",
+        "details": "Features balloon races, special shape balloons, and evening balloon glows throughout the week.",
+        "website": "https://nationalballoonclassic.com"
+    },
+    {
+        "name": "Temecula Valley Balloon and Wine Festival",
+        "location": "Temecula, California",
+        "month": "May",
+        "highlight": "Combines ballooning, wine, and live entertainment.",
+        "attendance": "Regional visitors",
+        "image": "images/temecula-balloon-festival.webp",
+        "bestFor": "Adults and wine enthusiasts",
+        "details": "Visitors enjoy hot air balloons alongside concerts, local wineries, and food vendors.",
+        "website": "https://tvbwf.com"
+    },
+    {
+        "name": "Adirondack Balloon Festival",
+        "location": "Queensbury, New York",
+        "month": "September",
+        "highlight": "Scenic launches in the Adirondack Mountains.",
+        "attendance": "150,000+ visitors",
+        "image": "images/adirondack-balloon-festival.webp",
+        "bestFor": "Fall colors and mountain scenery",
+        "details": "One of the largest balloon festivals in the Northeast with beautiful autumn backdrops.",
+        "website": "https://adirondackballoonfest.org"
+    },
+    {
+        "name": "Plano Balloon Festival",
+        "location": "Plano, Texas",
+        "month": "September",
+        "highlight": "Community festival with balloon launches and entertainment.",
+        "attendance": "80,000+ visitors",
+        "image": "images/plano-balloon-festival.webp",
+        "bestFor": "Families and community events",
+        "details": "Features balloon launches, fireworks, concerts, and activities for children.",
+        "website": "https://planoballoonfest.org"
+    },
+    {
+        "name": "Carolina BalloonFest",
+        "location": "Statesville, North Carolina",
+        "month": "October",
+        "highlight": "One of the longest-running balloon festivals in the Southeast.",
+        "attendance": "60,000+ visitors",
+        "image": "images/carolina-balloonfest.webp",
+        "bestFor": "Weekend festival trips",
+        "details": "Includes tethered rides, balloon launches, live music, and local vendors.",
+        "website": "https://carolinaballoonfest.com"
+    },
+    {
+        "name": "QuickChek New Jersey Festival of Ballooning",
+        "location": "Readington, New Jersey",
+        "month": "July",
+        "highlight": "Large-scale balloon festival with concerts and special shapes.",
+        "attendance": "175,000+ visitors",
+        "image": "images/new-jersey-balloon-festival.webp",
+        "bestFor": "Music and balloon fans",
+        "details": "Combines balloon launches with major entertainment acts and family attractions.",
+        "website": "https://balloonfestival.com"
+    },
+    {
+        "name": "Great Forest Park Balloon Race",
+        "location": "St. Louis, Missouri",
+        "month": "September",
+        "highlight": "Historic balloon race held in Forest Park.",
+        "attendance": "50,000+ visitors",
+        "image": "images/forest-park-balloon-race.webp",
+        "bestFor": "Historic balloon racing",
+        "details": "A long-running tradition featuring competitive balloon races and family activities.",
+        "website": "https://greatforestparkballoonrace.com"
+    },
+    {
+        "name": "Bristol International Balloon Fiesta",
+        "location": "Bristol, England",
+        "month": "August",
+        "highlight": "Europe's largest annual balloon festival.",
+        "attendance": "500,000+ visitors",
+        "image": "images/bristol-balloon-fiesta.webp",
+        "bestFor": "International balloon enthusiasts",
+        "details": "Features mass ascents, night glows, and balloon pilots from around the world.",
+        "website": "https://bristolballoonfiesta.co.uk"
+    }
+]
