@@ -55,6 +55,10 @@
         background-color: rgb(255 255 255 / 90%);
     }
 
+    .hero img {
+        height: 475px;
+    }
+
     /* Home Page */
 
     .featured-card {
