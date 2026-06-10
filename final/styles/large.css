@@ -45,7 +45,7 @@
         inset: auto auto 2rem 2rem;
         max-width: 460px;
         padding: 1.5rem;
-        background: rgb(255 255 255 / 90%);
+        background: var(--light-background);
         color: var(--dark-gray);
         border-radius: 12px;
     }

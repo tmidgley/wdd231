@@ -1,10 +1,14 @@
 :root {
     --sky-blue: #005A9C;
-    --sunrise-orange: #e67e22;
+    --sunrise-orange: #ff7700f1;
     --light-gray: #F8F9FA;
     --dark-gray: #222222;
     --white: #FFFFFF;
     --shadow: #D9D9D9;
+    --background: #00000059;
+    --dark-background: #0000008C;
+    --input: #999;
+    --light-background: #FFFFFFE6;
 }
 
 * {
@@ -167,7 +171,7 @@ form {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgb(0 0 0 / 35%);
+    background: var(--background);
 }
 
 .hero-content {
@@ -236,11 +240,11 @@ dialog {
     padding: 1rem;
     border: 0;
     border-radius: 16px;
-    box-shadow: 0 8px 24px rgb(0 0 0 / 35%);
+    box-shadow: 0 8px 24px var(--background);
 }
 
 dialog::backdrop {
-    background: rgb(0 0 0 / 55%);
+    background: var(--dark-background);
 }
 
 #festivalModal {
@@ -291,7 +295,7 @@ select {
     width: 100%;
     padding: 0.75rem;
     font: inherit;
-    border: 1px solid #999;
+    border: 1px solid var(--input);
     border-radius: 8px;
 }
 
