@@ -9,7 +9,7 @@ const activity = document.querySelector('#activity');
 if (activity) {
     const savedActivity = localStorage.getItem('favoriteActivity');
 
-    ```
+
 if (savedActivity) {
     activity.value = savedActivity;
 }
@@ -17,6 +17,6 @@ if (savedActivity) {
 activity.addEventListener('change', () => {
     localStorage.setItem('favoriteActivity', activity.value);
 });
-```
+
 
 }
